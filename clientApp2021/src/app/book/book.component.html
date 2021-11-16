@@ -1,7 +1,39 @@
-<ol>
+<h2>The List Of Books</h2>
+
+<!-- <ol>
     <li *ngFor='let b of books'>
-      {{b.title}} by 
-      {{b.author.name}}
+      Title:{{b.title}} /
+      AuthorName:{{b.author.name}} /
+      AuthorNationality:{{b.author.nationality}} /
+      Year Written:{{b.year_written}} /
+      Edition:{{b.edition}} /
+      Price:{{b.price}} .
     </li>
-  </ol>
+  </ol> -->
+
+  
+
+    <table>
+      <tr *ngFor="let b of books">
+        <th>Title:</th>
+        <td>{{ b.title }}</td>
+        
+        <th>AuthorName:</th>
+        <td>{{ b.author.name }}</td>
+
+        <th>AuthorNationality:</th>
+        <td>{{ b.author.nationality }}</td>
+
+        <th>Year Written:</th>
+        <td>{{ b.year_written }}</td>
+
+        <th>Edition:</th>
+        <td>{{ b.edition }}</td>
+
+        <th>Price:</th>
+        <td>{{ b.price }}</td>
+      </tr>
+    </table>
+    
+
   
