@@ -1,0 +1,17 @@
+<p>sample-form works!</p>
+
+<form [formGroup]="bookForm" (ngSubmit) = "onSubmit()" >
+
+    <div>
+        <label for="title"> Title</label>
+        <input id="title" type="text" formControlName="title">
+    </div>
+    <div>
+        <label for="year_written"> Year Written</label>
+        <input id="year_written" type="text" formControlName="year_written">
+    </div>
+    
+    <button type="submit" >Submit</button>
+    
+    </form>
+    
