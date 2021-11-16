@@ -9,6 +9,9 @@ import { BookService } from '../book.service';
 })
 export class BookComponent implements OnInit {
 
+  books: Book[] = [];
+  message: string = '';
+
   constructor(private bookService : BookService) { }
 
   
@@ -24,7 +27,6 @@ export class BookComponent implements OnInit {
   }
 
 
-  books: Book[] = [];
-message: String = ''
+  
 
 }
