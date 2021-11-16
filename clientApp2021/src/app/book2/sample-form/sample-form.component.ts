@@ -23,6 +23,15 @@ export class SampleFormComponent implements OnInit {
     console.log('forms submitted with ');
     console.table(this.bookForm.value);
   }
+
+  get title() {
+    return this.bookForm.get('title');
+  }
+  get year_written() {
+    return this.bookForm.get('year_written');
+  }
+  
+
 }
 
 
