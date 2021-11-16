@@ -11,7 +11,7 @@
         <input id="year_written" type="text" formControlName="year_written">
     </div>
     
-    <button type="submit" >Submit</button>
+    <button type="submit"[disabled]= "!bookForm.valid" >Submit</button>
     
     </form>
     

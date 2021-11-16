@@ -20,7 +20,8 @@ export class SampleFormComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log('forms submitted with ' + this.bookForm.value)
+    console.log('forms submitted with ');
+    console.table(this.bookForm.value);
   }
 }
 
