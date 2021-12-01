@@ -12,7 +12,7 @@ export class BookFormComponent implements OnInit {
   @Input() book?: Book;
   @Output() bookFormClose = new EventEmitter<Book>();
   message: string = "";
-  bookForm? : FormGroup  ;
+  bookForm :FormGroup = new FormGroup({});
 
 
   
